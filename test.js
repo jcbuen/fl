@@ -27,12 +27,16 @@
 
     const baseArrowStyle = {
       position: "absolute",
-      top: "50%",
+      top: "67%",
+      height: "45%",
       transform: "translateY(-50%)",
       fontSize: "2rem",
       background: "rgba(255,255,255,0.7)",
       cursor: "pointer",
       zIndex: "10",
+      display: "flex",
+      align-items: "center",
+      justify-content: "center",
       padding: "0 10px",
       transition: "opacity 0.3s ease",
       opacity: "0",
