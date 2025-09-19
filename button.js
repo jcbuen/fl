@@ -1,19 +1,13 @@
-(function setupDualScrollArrowInjector() {
+(function waitForTargetAndInject() {
   const targetSelector = "#homeTab > div > div.verticalSection.section0.emby-scroller-container";
-  const debug = true;
 
-  function log(...args) {
-    if (debug) console.log("[ScrollArrowInjector]", ...args);
-  }
-
-  function injectArrows(container) {
+  function injectDualScrollArrows(container) {
     if (!container || container.dataset.arrowInjected) return;
 
-    const scrollable = container.querySelector(".emby-scroller");
-    if (!scrollable) return log("No scrollable child found");
-
     container.dataset.arrowInjected = "true";
-    log("Injecting arrows into", container);
+
+    const scrollable = container.querySelector(".emby-scroller");
+    if (!scrollable) return console.warn("No scrollable child found");
 
     // Create wrapper
     const wrapper = document.createElement("div");
@@ -48,7 +42,7 @@
     Object.assign(leftArrow.style, baseArrowStyle, { left: "0" });
     Object.assign(rightArrow.style, baseArrowStyle, { right: "0" });
 
-   
+    // Inject into DOM
     container.insertBefore(wrapper, scrollable);
     wrapper.appendChild(scrollable);
     wrapper.appendChild(leftArrow);
@@ -88,14 +82,24 @@
   function tryInject() {
     const container = document.querySelector(targetSelector);
     if (container && !container.dataset.arrowInjected) {
-      injectArrows(container);
+      injectDualScrollArrows(container);
     }
   }
 
-  // Route-aware observer
-  const observer = new MutationObserver(() => requestAnimationFrame(tryInject));
-  observer.observe(document.body, { childList: true, subtree: true });
+  // Wait for document.body to exist
+  function waitForBody() {
+    if (!document.body) {
+      requestAnimationFrame(waitForBody);
+      return;
+    }
 
-  // Initial attempt
-  requestAnimationFrame(tryInject);
+    // Observe DOM changes to catch dynamic navigation
+    const observer = new MutationObserver(() => requestAnimationFrame(tryInject));
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Initial injection attempt
+    requestAnimationFrame(tryInject);
+  }
+
+  waitForBody();
 })();
