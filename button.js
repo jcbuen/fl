@@ -48,7 +48,7 @@
     Object.assign(leftArrow.style, baseArrowStyle, { left: "0" });
     Object.assign(rightArrow.style, baseArrowStyle, { right: "0" });
 
-    // Inject into DOM
+   
     container.insertBefore(wrapper, scrollable);
     wrapper.appendChild(scrollable);
     wrapper.appendChild(leftArrow);
