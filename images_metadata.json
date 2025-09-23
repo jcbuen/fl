@@ -10,6 +10,86 @@
     }
   },
   {
+    "name": "collection-02",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-02.gif?raw=true",
+    "size_in_bytes": 177116,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-03",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-03.gif?raw=true",
+    "size_in_bytes": 99071,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-04",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-04.gif?raw=true",
+    "size_in_bytes": 13060,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-05",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-05.gif?raw=true",
+    "size_in_bytes": 668284,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-06",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-06.gif?raw=true",
+    "size_in_bytes": 561926,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-07",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-07.gif?raw=true",
+    "size_in_bytes": 857728,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-08",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-08.gif?raw=true",
+    "size_in_bytes": 112083,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
+    "name": "collection-09",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collection-09.gif?raw=true",
+    "size_in_bytes": 7330022,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
     "name": "xbox-one-82",
     "folder": "Xbox One",
     "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Xbox One/xbox-one-82.png?raw=true",
