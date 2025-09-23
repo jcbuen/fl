@@ -1,5 +1,15 @@
 [
   {
+    "name": "collections-01",
+    "folder": "Collections",
+    "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Collections/collections-01?raw=true",
+    "size_in_bytes": 42221,
+    "dimensions": {
+      "width": 1080,
+      "height": 1080
+    }
+  },
+  {
     "name": "xbox-one-82",
     "folder": "Xbox One",
     "url": "https://raw.githubusercontent.com/jcbuen/fl/main/images/Xbox One/xbox-one-82.png?raw=true",
